@@ -1,0 +1,13 @@
+.error-p {
+    text-align: center;
+    font-size: 20px;
+    color: rgba(51, 49, 49, 0.781);
+}
+.pad {
+    padding: 0;
+}
+#spiner {
+    position: relative;
+    left: 50%;
+    display: none;
+}

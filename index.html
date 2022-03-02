@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quick Mobile | home</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./app.js" defer></script>
+        <!-- Bootstrap Css Cdn Link -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- nav-bar section -->
+        <header class="container">
+            <nav
+                class="navbar navbar-expand-lg navbar-light text-black-50 py-lg-3"
+            >
+                <div class="container">
+                    <img
+                        src="./Images/logos.webp"
+                        alt="brand logo"
+                        class="d-inline-block align-text-top"
+                    />
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-lg-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fs-5 active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link" href="#">Cotact Us</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-solid fa-envelope"></i
+                                ></a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a href="#" class="nav-link text-danger"
+                                    ><i class="fa-solid fa-bell"></i
+                                ></a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a href="" class="nav-link text-primary">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <input
+                                id="search-fild"
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button
+                                onclick="showProduct()"
+                                class="btn btn-outline-success"
+                                type="submit"
+                                id="search-btn"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- main product section -->
+        <main class="py-lg-2">
+            <!-- Loading  spiner -->
+            <div id="spiner" class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="container">
+                <div
+                    id="parent-cart"
+                    class="row gap-lg-5 justify-content-lg-around justify-content-center"
+                ></div>
+                <div
+                    id="extra-product"
+                    class="row gap-lg-5 justify-content-lg-around justify-content-center"
+                ></div>
+            </div>
+            <!-- Booatstrap Product details Modal -->
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button
+                            type="button"
+                            class="btn-close p-lg-3 me-0"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                        <div
+                            id="modalBody"
+                            class="modal-dialog modal-dialog-centered modal-dialog-scrollabl"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Bootstrap Javascript Cdn Link  -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Font Awesome Javascript Cdn Link  -->
+        <script
+            src="https://kit.fontawesome.com/539a929e27.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
